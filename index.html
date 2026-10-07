@@ -138,11 +138,11 @@
        TOP ANNOUNCEMENT BAR
        ======================================================== -->
   <aside aria-label="Announcement" class="bg-maroon-900 text-gold-300 py-2.5 px-4 text-center border-b border-maroon-800">
-    <div class="max-w-7xl mx-auto flex items-center justify-center text-[10.5px] sm:text-xs md:text-[13px] tracking-[0.16em] sm:tracking-[0.22em] uppercase font-medium">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center text-[8px] sm:text-xs md:text-[13px] tracking-[0.08em] sm:tracking-[0.22em] uppercase font-medium">
       <span>PAN-INDIA DELIVERY</span>
-      <span class="mx-2.5 sm:mx-4 text-gold-400 font-bold">•</span>
+      <span class="mx-1.5 sm:mx-4 text-gold-400 font-bold">•</span>
       <span>WHOLESALE &amp; RETAIL</span>
-      <span class="mx-2.5 sm:mx-4 text-gold-400 font-bold">•</span>
+      <span class="mx-1.5 sm:mx-4 text-gold-400 font-bold">•</span>
       <span>WHATSAPP ORDERS WELCOME</span>
     </div>
   </aside>
@@ -152,18 +152,18 @@
        ======================================================== -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#eadecc] transition-all duration-300 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between gap-2 h-16 sm:h-20">
         
         <!-- Brand Logo (Left) -->
         <a href="#hero" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 rounded-sm">
           <!-- Monogram Logo Mark -->
-          <div class="relative w-80 h-80 flex items-center justify-center">
-            <img src="images/Logos/Header_Logo_Transparent.png" alt="Shambhavi Vastra Logo" class="object-contain transition-transform duration-300 group-hover:scale-105">
+          <div class="relative w-32 sm:w-44 xl:w-56 flex items-center justify-center">
+            <img src="images/Logos/Header_Logo_Transparent.png" alt="Shambhavi Vastra Logo" class="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-105">
           </div>
         </a>
 
         <!-- Desktop Navigation with Mega Menu (Center) -->
-        <nav class="hidden lg:flex items-center space-x-7 text-[13.5px] font-medium tracking-wide text-gray-800">
+        <nav class="hidden xl:flex items-center space-x-5 2xl:space-x-7 text-[13.5px] font-medium tracking-wide text-gray-800">
           
           <!-- SAREES (MEGA MENU) -->
           <div class="relative group py-6">
@@ -175,7 +175,7 @@
             </a>
             
             <!-- MEGA MENU DROPDOWN (FULL WIDTH / EXPANDED) -->
-            <div class="mega-menu-content absolute left-1/2 -translate-x-1/2 top-full w-[880px] bg-white rounded-2xl shadow-2xl border border-gold-200/80 p-7 z-50">
+            <div class="mega-menu-content absolute left-1/2 -translate-x-1/2 top-full w-[min(880px,calc(100vw-2rem))] bg-white rounded-2xl shadow-2xl border border-gold-200/80 p-4 sm:p-7 z-50">
               <div class="grid grid-cols-4 gap-6">
                 <!-- Column 1: By Fabric -->
                 <div>
@@ -248,7 +248,7 @@
             </a>
 
             <!-- MEGA MENU DROPDOWN -->
-            <div class="mega-menu-content absolute left-1/2 -translate-x-1/2 top-full w-[820px] bg-white rounded-2xl shadow-2xl border border-gold-200/80 p-7 z-50">
+            <div class="mega-menu-content absolute left-1/2 -translate-x-1/2 top-full w-[min(820px,calc(100vw-2rem))] bg-white rounded-2xl shadow-2xl border border-gold-200/80 p-4 sm:p-7 z-50">
               <div class="grid grid-cols-4 gap-6">
                 <!-- Column 1: Silhouettes -->
                 <div>
@@ -321,7 +321,7 @@
         </nav>
 
         <!-- Right Icons & Mobile Menu Button -->
-        <div class="flex items-center space-x-3 sm:space-x-5 text-gray-700">
+        <div class="flex shrink-0 items-center gap-0 sm:gap-2 text-gray-700">
           
           <!-- Search Icon Button -->
           <button id="searchBtn" aria-label="Search items" class="p-2 hover:text-maroon-800 transition-colors focus:outline-none">
@@ -331,7 +331,7 @@
           </button>
 
           <!-- Wishlist (Heart) Icon Button -->
-          <button id="wishlistBtn" aria-label="Wishlist" class="p-2 hover:text-maroon-800 transition-colors relative focus:outline-none group">
+          <button id="wishlistBtn" aria-label="Wishlist" class="hidden sm:block p-2 hover:text-maroon-800 transition-colors relative focus:outline-none group">
             <svg class="w-5 h-5 stroke-[1.8] group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
@@ -349,7 +349,7 @@
           </button>
 
           <!-- Mobile Hamburger Menu Button -->
-          <button id="mobileMenuToggle" aria-label="Toggle menu" class="lg:hidden p-2 text-gray-700 hover:text-maroon-800 focus:outline-none">
+          <button id="mobileMenuToggle" aria-label="Toggle menu" aria-controls="mobileDrawer" aria-expanded="false" class="xl:hidden p-2 text-gray-700 hover:text-maroon-800 focus:outline-none">
             <svg id="hamburgerIcon" class="w-6 h-6 stroke-[2]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -377,7 +377,7 @@
     <!-- ========================================================
          MOBILE NAVIGATION DRAWER (ACCORDIONS + MEGA MENU CONTENT)
          ======================================================== -->
-    <div id="mobileDrawer" class="hidden lg:hidden bg-cream-50 border-t border-gold-200 max-h-[85vh] overflow-y-auto px-6 py-6 transition-all duration-300">
+    <div id="mobileDrawer" class="hidden xl:hidden bg-cream-50 border-t border-gold-200 max-h-[85vh] overflow-y-auto px-4 sm:px-6 py-6 transition-all duration-300">
       <div class="space-y-4">
         
         <!-- Sarees Accordion -->
@@ -438,9 +438,12 @@
     <!-- Accessible SEO Heading for Screen Readers & Search Engines -->
     <h1 class="sr-only">Shambhavi Vastra | Elegance in Every Drape - Handcrafted Sarees &amp; Designer Suits</h1>
 
-    <!-- Hero Banner Wrapper: Fills the viewport while preserving the banner aspect ratio -->
-    <div class="relative w-full aspect-[1024/455] bg-no-repeat bg-center bg-cover flex items-end justify-center shadow-2xl"
-         style="aspect-ratio: 1024 / 455; background-image: url('images/HeroBanner_2.25to1_5760x2560.png');">
+    <!-- Responsive hero artwork uses portrait imagery on phones and a wide banner on larger screens -->
+    <div class="relative w-full aspect-[4/5] md:aspect-[21/9] flex items-end justify-center shadow-2xl">
+      <picture class="absolute inset-0">
+        <source media="(max-width: 767px)" srcset="images/HeroBanner/HeroBanner_Mobile_4to5_2160x2700.png">
+        <img src="images/HeroBanner/HeroBanner_21to9_5040x2160.png" alt="" class="w-full h-full object-cover">
+      </picture>
       
       <!-- Interactive CTA Buttons: SHOP SAREES & SHOP SUITS -->
       <div class="relative z-10 w-full flex items-center justify-center gap-2.5 sm:gap-5 md:gap-6 pb-[1%] sm:pb-[1.2%] md:pb-[1.5%] px-3 sm:px-6">
@@ -755,7 +758,7 @@
       </div>
 
       <!-- 4 Product Cards Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-6 lg:gap-6">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
         
         <!-- ================= PRODUCT 1: Banarasi Silk Saree ================= -->
         <div class="bg-white rounded-2xl p-3 border border-[#eadecc] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
@@ -1003,10 +1006,10 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
         
         <!-- PROMO BANNER 1: Suits Collection -->
-        <div id="suits-collection" class="bg-gradient-to-r from-[#3b0816] via-[#430a1a] to-[#340713] rounded-2xl overflow-hidden border border-gold-400/30 p-6 sm:p-8 flex items-center justify-between shadow-xl relative group">
+        <div id="suits-collection" class="bg-gradient-to-r from-[#3b0816] via-[#430a1a] to-[#340713] rounded-2xl overflow-hidden border border-gold-400/30 p-4 sm:p-8 flex items-center justify-between gap-2 shadow-xl relative group">
           <!-- Text Content (Left) -->
-          <div class="max-w-[62%] sm:max-w-[60%] z-10 flex flex-col justify-center">
-            <h3 class="font-serif-lux text-2xl sm:text-3xl lg:text-4xl font-normal text-gold-200 leading-tight">
+          <div class="min-w-0 max-w-[65%] sm:max-w-[60%] z-10 flex flex-col justify-center">
+            <h3 class="font-serif-lux text-xl sm:text-3xl lg:text-4xl font-normal text-gold-200 leading-tight">
               Suits Collection
             </h3>
             <p class="font-serif-lux text-xs sm:text-sm text-gold-300/80 mt-1 sm:mt-2 tracking-wide">
@@ -1020,7 +1023,7 @@
           </div>
 
           <!-- Graphic (Right: Teal Suit Illustration) -->
-          <div class="w-32 sm:w-44 md:w-48 h-36 sm:h-48 relative flex items-center justify-center">
+          <div class="w-24 sm:w-44 md:w-48 h-28 sm:h-48 shrink-0 relative flex items-center justify-center">
             <svg viewBox="0 0 160 200" class="w-full h-full drop-shadow-2xl">
               <!-- Sheer Dupatta -->
               <path d="M 115 25 L 140 55 L 144 165 L 128 170 L 108 45 Z" fill="#debca2" opacity="0.6"/>
@@ -1043,10 +1046,10 @@
         </div>
 
         <!-- PROMO BANNER 2: Wholesale Enquiries -->
-        <div id="wholesale" class="bg-gradient-to-r from-[#3b0816] via-[#430a1a] to-[#340713] rounded-2xl overflow-hidden border border-gold-400/30 p-6 sm:p-8 flex items-center justify-between shadow-xl relative group">
+        <div id="wholesale" class="bg-gradient-to-r from-[#3b0816] via-[#430a1a] to-[#340713] rounded-2xl overflow-hidden border border-gold-400/30 p-4 sm:p-8 flex items-center justify-between gap-2 shadow-xl relative group">
           <!-- Text Content (Left) -->
-          <div class="max-w-[62%] sm:max-w-[60%] z-10 flex flex-col justify-center">
-            <h3 class="font-serif-lux text-2xl sm:text-3xl lg:text-4xl font-normal text-gold-200 leading-tight">
+          <div class="min-w-0 max-w-[65%] sm:max-w-[60%] z-10 flex flex-col justify-center">
+            <h3 class="font-serif-lux text-xl sm:text-3xl lg:text-4xl font-normal text-gold-200 leading-tight">
               Wholesale Enquiries
             </h3>
             <p class="font-serif-lux text-xs sm:text-sm text-gold-300/80 mt-1 sm:mt-2 tracking-wide">
@@ -1060,7 +1063,7 @@
           </div>
 
           <!-- Graphic (Right: Silk Saree Drape Artwork) -->
-          <div class="w-32 sm:w-44 md:w-48 h-36 sm:h-48 rounded-xl overflow-hidden relative shadow-2xl border border-gold-400/30">
+          <div class="w-24 sm:w-44 md:w-48 h-28 sm:h-48 shrink-0 rounded-xl overflow-hidden relative shadow-2xl border border-gold-400/30">
             <svg viewBox="0 0 160 200" class="w-full h-full" preserveAspectRatio="none">
               <rect width="160" height="200" fill="url(#silkGrad)"/>
               <path d="M 0 0 L 160 160 L 160 200 L 0 200 Z" fill="#6a0a25" opacity="0.4"/>
@@ -1145,7 +1148,7 @@
         <!-- Column 1: Brand Info & Logo -->
         <div class="space-y-4">
           <div class="flex items-center gap-3">
-            <img src="images/Logos/Footer_Logo_Transparent.png" alt="Shambhavi Vastra Logo" class="w-80 h-15 object-contain">
+            <img src="images/Logos/Footer_Logo_Transparent.png" alt="Shambhavi Vastra Logo" class="w-48 sm:w-56 max-w-full h-auto object-contain">
             
           </div>
           <p class="font-serif-lux italic text-base text-gold-200/90">
@@ -1347,17 +1350,27 @@
     const toastMessage = document.getElementById('toastMessage');
 
     // 1. Mobile Menu Drawer Toggle
+    function closeMobileMenu() {
+      mobileDrawer.classList.add('hidden');
+      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      hamburgerIcon.classList.remove('hidden');
+      closeMenuIcon.classList.add('hidden');
+    }
+
     mobileMenuToggle.addEventListener('click', () => {
       const isExpanded = !mobileDrawer.classList.contains('hidden');
       if (isExpanded) {
-        mobileDrawer.classList.add('hidden');
-        hamburgerIcon.classList.remove('hidden');
-        closeMenuIcon.classList.add('hidden');
+        closeMobileMenu();
       } else {
         mobileDrawer.classList.remove('hidden');
+        mobileMenuToggle.setAttribute('aria-expanded', 'true');
         hamburgerIcon.classList.add('hidden');
         closeMenuIcon.classList.remove('hidden');
       }
+    });
+
+    mobileDrawer.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
     });
 
     // Mobile Accordion functionality
